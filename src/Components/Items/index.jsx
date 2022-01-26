@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Item } from "../Item";
+import ImagesFilter from '../ImagesFilter'
 
 const ItemsWrapper = styled.div`
   box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
@@ -17,6 +18,7 @@ export const Items = (props) => {
 
   return (
     <ItemsWrapper>
+      { ImagesFilter(props.type) }
       <Item {...props}/>
       <span>{props.date}</span>
     </ItemsWrapper>
