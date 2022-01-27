@@ -43,3 +43,12 @@ export const Detalhe = styled.span`
   color: #41d3be;
   font-size: 24px;
 `;
+
+export const ButtonTema = styled.button`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+`;
